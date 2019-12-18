@@ -1,0 +1,62 @@
+.mainPierreContainer {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.titlePierre {
+    background-color: white;
+    padding: 30px;
+}
+
+.msgAvertissement {
+    background-color: lightgray;
+    padding: 40px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.reserverButton {
+    background-color: #ee5253;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.alexJauges {
+    background-color: lightgray;
+    width: 350px;
+}
+
+.choiceText {
+    font-size: 24px;
+}
+
+.jaugesContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.fakeBar {
+    background-color: white;
+    width: 100px;
+    height: 25px;
+}
+
+.fakeContent1 {
+    background-color: lawngreen;
+    width: 35px;
+    height: 25px;
+}
+
+.fakeContent2 {
+    background-color: lawngreen;
+    width: 60px;
+    height: 25px;
+}

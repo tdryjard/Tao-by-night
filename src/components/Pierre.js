@@ -1,0 +1,37 @@
+import React from 'react';
+import './Pierre.css';
+
+const Pierre = () => {
+    return (
+        <div className="mainPierreContainer">
+            <div>
+                <p className="msgAvertissement">Attentions vos horaires seront validés une fois seulement le nombre de
+                    passagers minimum atteint</p>
+            </div>
+            <div>
+                <p className="titlePierre">Vos horaires sélectionnés:</p>
+            </div>
+            <div className="alexJauges">
+                <div className="jaugesContainer">
+                    <p className="choiceText">1er choix</p>
+                    <p>02:00</p>
+                    <div className="fakeBar">
+                        <div className="fakeContent1"/>
+                        <p>35%</p>
+                    </div>
+                </div>
+                <div className="jaugesContainer">
+                    <p className="choiceText">2e choix</p>
+                    <p>03:00</p>
+                    <div className="fakeBar">
+                        <div className="fakeContent2"/>
+                        <p>60%</p>
+                    </div>
+                </div>
+            </div>
+            <button className="reserverButton">Réserver</button>
+        </div>
+    )
+};
+
+export default Pierre;
