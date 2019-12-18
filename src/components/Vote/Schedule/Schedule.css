@@ -1,0 +1,30 @@
+.horaire {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.bar-container {
+    background: rgba(0, 0, 0, 0.4);
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    background: rgb(118, 216, 61);
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.schedule {
+    font-size: 1.25em;
+}
