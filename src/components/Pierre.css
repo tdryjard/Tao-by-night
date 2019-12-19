@@ -32,6 +32,7 @@
 .reserverButton:active {
     transform: scale(.95);
 }
+
 .alexJauges {
     background-color: lightgray;
     width: 450px;

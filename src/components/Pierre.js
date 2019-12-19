@@ -17,8 +17,9 @@ const Pierre = () => {
                     <p>Le 28/12/2019</p>
                     <p>02:00</p>
                     <div className="fakeBar">
-                        <div className="fakeContent1"/>
-                        <p>35%</p>
+                        <div className="fakeContent1">
+                            35%
+                        </div>
                     </div>
                 </div>
                 <div className="jaugesContainer">
@@ -26,8 +27,9 @@ const Pierre = () => {
                     <p>Le 28/12/2019</p>
                     <p>03:00</p>
                     <div className="fakeBar">
-                        <div className="fakeContent2"/>
-                        <p>60%</p>
+                        <div className="fakeContent2">
+                            60%
+                        </div>
                     </div>
                 </div>
             </div>
