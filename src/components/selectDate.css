@@ -3,7 +3,8 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background-color: #222;
 }
 
 .titleJour{
@@ -11,9 +12,9 @@
     justify-content: center;
     align-items: center;
     width : 100%;
-    height: 20%;
+    height: 10%;
     margin-top: 0;
-    background: rgb(63, 175, 87);
+    background: #222;
 }
 
 .textJour{
@@ -41,24 +42,22 @@
 
 .weekDate{
     margin: 3%;
-    background: rgb(137, 207, 129);
+    background: rgb(255, 255, 255);
     border-radius: 5px;
     border: 2px solid black;
     width: 100%;
     font-family: 'Pattaya', sans-serif;
     letter-spacing: 0.3ch;
-    color: white;
 }
 
 .semaineDate{
     margin: 3%;
-    background: #4FA846;
+    background: rgb(240, 240, 240);
     border-radius: 5px;
     border: 2px solid black;
     width: 90%;
     font-family: 'Pattaya', sans-serif;
     letter-spacing: 0.3ch;
-    color: white;
 }
 
 .headDate{

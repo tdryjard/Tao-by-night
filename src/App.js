@@ -1,7 +1,9 @@
 import React from 'react';
 import Vote from "./components/Vote/Vote";
-import {Switch, Route} from 'router-react-dom'
+import {Switch, Route} from 'react-router-dom'
 import SelectDate from './components/SelectDate'
+import Payment from './components/Payment'
+import Reservate from './components/Reservate'
 import './App.css';
 
 function App() {
@@ -9,10 +11,10 @@ function App() {
 	return (
 		<div className="App">
       <Switch>
-        <Route exact path ='/'>{SelectDate}</Route>
-        <Route exact path ='/payment'>{Payment}</Route>
-        <Route exact path ='/reservate'>{Reservate}</Route>
-        <Route exact path ='/vote'>{Vote}</Route>
+        <Route exact path='/' component={SelectDate} />
+        <Route path='/payment' component={Payment} />
+        <Route path='/reservate' component={Reservate} />
+        <Route path='/vote' component={Vote} />
       </Switch>
 		</div>
 	);

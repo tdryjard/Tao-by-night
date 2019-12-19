@@ -1,17 +1,10 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
-import Cleave from 'cleave.js/dist/cleave-react';
 import './payment.css'
 
 const Payment = () => {
 
-    function onCreditCardChange (event) {
-        // formatted pretty value
-        console.log(event.target.value);
-
-        // raw value
-        console.log(event.target.rawValue);
-    }
+    const [test, settest] = useState('')
 
     return (
         <div className="contentFirst">
@@ -20,9 +13,7 @@ const Payment = () => {
             </div>
             <h4 className="textPay">Si la demande pour la ligne n'atteint pas le minimum requis vous ne serez pas débité</h4>
             <section>
-            <Cleave className="cardNumber" placeholder="numéro de carte"
-                options={{creditCard: true}}
-                onChange={onCreditCardChange} />
+            <input className="cardNumber" placeholder="numéro de carte"/>
             <input className="cardNumber1" placeholder="expiration"/>
             <input className="cardNumber2"placeholder="CVV"/>
             </section>

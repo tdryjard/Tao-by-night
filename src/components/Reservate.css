@@ -1,11 +1,11 @@
 .contentReservate{
     height: 100vh;
-    background-color: rgb(115, 214, 153);
+    background-color: #222;
 }
 
 .textReservate{
     font-family: 'Roboto', sans-serif;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 3%;
 }
 

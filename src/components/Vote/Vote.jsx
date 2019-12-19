@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom'
 import "./Vote.css";
 import Schedule from "./Schedule/Schedule";
 
@@ -28,7 +29,7 @@ function Vote() {
             {
                 votes.length && votes.map((votes, index) => <Schedule votes={votes.number} schedule={votes.hour} />)
             }
-            <button className="vote-btn">Vote</button>
+            <Link to="/payment"><button className="vote-btn">Vote</button></Link>
         </div>
     )
 }
