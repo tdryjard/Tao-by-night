@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Vote from "./components/Vote/Vote";
+import {Switch, Route} from 'router-react-dom'
+import SelectDate from './components/SelectDate'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	return (
+		<div className="App">
+      <Switch>
+        <Route exact path ='/'>{SelectDate}</Route>
+        <Route exact path ='/payment'>{Payment}</Route>
+        <Route exact path ='/reservate'>{Reservate}</Route>
+        <Route exact path ='/vote'>{Vote}</Route>
+      </Switch>
+		</div>
+	);
 }
 
 export default App;
