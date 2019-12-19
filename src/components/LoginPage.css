@@ -1,0 +1,49 @@
+.cocolor{
+    background: #555;
+    height: 100vh;
+}
+.titleCo{
+    border-radius: 3px;
+    margin: 0;
+    padding-top: 45px;
+    height: 90px;
+    color: white;
+}
+.inputTotal{
+    margin-top: 140px;
+}
+#email{
+    height: 20px;
+    width: 200px;
+    border: none;
+    border-bottom: solid 1px #ffffff;
+    background: transparent;
+    color: white;
+}
+#email::placeholder{
+    color: white;
+}
+#password{
+    height: 20px;
+    width: 200px;
+    border: none;
+    border-bottom: solid 1px #ffffff;
+    background: transparent;
+}
+#password::placeholder{
+    color: white;
+}
+.input2{
+    margin-top: 80px;
+}
+.connexion{
+    background: #ffffff;
+    margin-top: 100px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 130px;
+}
+.connexion:active{
+    transform: scale(.95);
+}
