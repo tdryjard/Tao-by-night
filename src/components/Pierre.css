@@ -25,14 +25,22 @@
     padding: 15px;
     font-size: 24px;
     margin-bottom: 25px;
+    border:none;
+    color: white;
+}
+
+.reserverButton:active {
+    transform: scale(.95);
 }
 .alexJauges {
     background-color: lightgray;
-    width: 350px;
+    width: 450px;
 }
 
 .choiceText {
     font-size: 24px;
+    background-color: white;
+    padding: 5px;
 }
 
 .jaugesContainer {

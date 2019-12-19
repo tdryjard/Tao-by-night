@@ -14,6 +14,7 @@ const Pierre = () => {
             <div className="alexJauges">
                 <div className="jaugesContainer">
                     <p className="choiceText">1er choix</p>
+                    <p>Le 28/12/2019</p>
                     <p>02:00</p>
                     <div className="fakeBar">
                         <div className="fakeContent1"/>
@@ -22,6 +23,7 @@ const Pierre = () => {
                 </div>
                 <div className="jaugesContainer">
                     <p className="choiceText">2e choix</p>
+                    <p>Le 28/12/2019</p>
                     <p>03:00</p>
                     <div className="fakeBar">
                         <div className="fakeContent2"/>
@@ -29,7 +31,7 @@ const Pierre = () => {
                     </div>
                 </div>
             </div>
-            <button className="reserverButton">Réserver</button>
+            <button className="reserverButton">Valider mes choix</button>
         </div>
     )
 };
