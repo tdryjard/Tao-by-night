@@ -1,0 +1,65 @@
+.mainHomePage {
+    background-color: #222;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titleHome {
+    background-color: #222;
+    color: white;
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+}
+
+.circle {
+    margin: 20px;
+    font-size: 24px;
+    justify-items: start;
+}
+
+.circleContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nb1 {
+    background-image: url("https://pngimage.net/wp-content/uploads/2018/06/inscription-icon-png-8.png");
+}
+
+.circleAndText {
+    color: black;
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    background: white;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.theTwoButtons {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #222;
+}
+
+.buttonsConnect {
+    color: black;
+    padding: 15px;
+    background-color: white;
+    border: solid 2px white;
+    border-radius: 10px;
+}
+
+.buttonsConnect:active {
+    transform: scale(.95);
+}

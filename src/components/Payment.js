@@ -21,6 +21,8 @@ const Payment = () => {
             <input className="enterMail" placeholder="Adresse mail" required="required"></input> 
             <div className="placeButton">
             <Link to="/reservate"><button className="reserveButton">Réserver</button></Link>
+
+
             </div>
         </div>
     )
