@@ -29,7 +29,7 @@ function Vote() {
             {
                 votes.length && votes.map((votes, index) => <Schedule votes={votes.number} schedule={votes.hour} />)
             }
-            <Link to="/payment"><button className="vote-btn">Vote</button></Link>
+            <Link to="/recap"><button className="vote-btn">Vote</button></Link>
         </div>
     )
 }

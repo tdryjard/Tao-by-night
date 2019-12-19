@@ -7,6 +7,9 @@ import Reservate from './components/Reservate'
 import ContactUs from './components/ContactUs'
 import HomePage from './components/HomePage'
 import Recap from './components/Recap'
+import SelectionDeLigne from "./components/SelectionDeLigne";
+import LoginPage from "./components/LoginPage";
+import SignInPage from "./components/SignInPage";
 import './App.css';
 
 function App() {
@@ -15,7 +18,10 @@ function App() {
 		<div className="App">
       <Switch>
         <Route exact path='/' component={HomePage} />
+        <Route path='/connexion' component={LoginPage}/>
+        <Route path='/inscription' component={SignInPage}/>
         <Route path='/date' component={SelectDate} />
+        <Route path='/ligne' component={SelectionDeLigne}/>
         <Route path='/vote' component={Vote} />
         <Route path='/recap' component={Recap} />
         <Route path='/payment' component={Payment} />
@@ -24,6 +30,5 @@ function App() {
       </Switch>
 		</div>
 	);
-}
-
+  }
 export default App;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './Recap.css';
 
 const Pierre = () => {
@@ -31,7 +32,7 @@ const Pierre = () => {
                     <p>Le 28/12/2019, à 03:00</p>
                 </div>
             </div>
-            <button className="reserverButton">Valider mes choix</button>
+            <Link to="payment"><button className="reserverButton">Valider mes choix</button></Link>
         </div>
     )
 };

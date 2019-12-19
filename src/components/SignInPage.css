@@ -1,0 +1,43 @@
+.generale{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contnersInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    margin-top: 150px;
+}
+.inscri{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 50px;
+}
+#name{
+    border: none;
+    border-bottom: solid black 1px;
+    width: 180px;
+}#mail{
+    border: none;
+    border-bottom: solid black 1px;
+    width: 180px;
+}#mpd{
+    border: none;
+    border-bottom: solid black 1px;
+    width: 180px;
+}
+.vava{
+    margin-top: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+
+}
+.vava:active{
+    transform: scale(.95);
+
+}

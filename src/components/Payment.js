@@ -1,10 +1,21 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import './payment.css'
 
 const Payment = () => {
 
     const [test, settest] = useState('')
+
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
 
     return (
         <div className="contentFirst">
@@ -20,7 +31,7 @@ const Payment = () => {
             <h4 className="textPay2">Restez au courant de l'avancé de votre réservation et recevez votre Qr Code par mail</h4>
             <input className="enterMail" placeholder="Adresse mail" required="required"></input> 
             <div className="placeButton">
-            <Link to="/reservate"><button className="reserveButton">Réserver</button></Link>
+            <Link to="/contact"><button className="reserveButton">Réserver</button></Link>
 
 
             </div>

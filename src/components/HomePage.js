@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import './HomePage.css'
 
 const HomePage = () => {
@@ -24,8 +25,8 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="theTwoButtons">
-                <button className="buttonsConnect">Connexion</button>
-                <button className="buttonsConnect">Inscription</button>
+                <Link to="connexion"><button className="buttonsConnect">Connexion</button></Link>
+                <Link to="inscription"><button className="buttonsConnect">Inscription</button></Link>
             </div>
         </div>
     )
