@@ -1,7 +1,9 @@
 import React from 'react';
 import Vote from "./components/Vote/Vote";
-import {Switch, Route} from 'router-react-dom'
+import {Switch, Route} from 'react-router-dom'
+import Payment from './components/Payment'
 import SelectDate from './components/SelectDate'
+import Reservate from './components/Reservate'
 import './App.css';
 
 function App() {
