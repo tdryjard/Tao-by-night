@@ -1,15 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Vote.css";
 import Schedule from "./Schedule/Schedule";
 
 function Vote() {
+
+    const [votes, setVotes] = useState([]);
+
+    const getThings = async () => {
+        const header = new Headers({'Authorization' : 'AAAA', 'Password': '1234', 'Email': 'thomas@gmail.com'});
+		const response = await fetch('/index', { method: 'POST', headers: header });
+		const jsonResponse = await response.json();
+        setVotes(jsonResponse[1].votes);
+        console.log(jsonResponse[1].votes)
+	}
+
+    useEffect(() => {
+        getThings();
+    }, [])
+
+
     return (
         <div className="vote">
-            <h1>Horaires</h1>
-            <Schedule amount={10} schedule={3} />
-            <Schedule amount={60} schedule={1} />
-            <Schedule amount={40} schedule={2} />
-            <Schedule amount={30} schedule={4} />
+            <div>
+                <h1>Horaires</h1>
+                <small>* plusieurs choix sont possibles</small>
+            </div>
+            {
+                votes.length && votes.map((votes, index) => <Schedule votes={votes.number} schedule={votes.hour} />)
+            }
             <button className="vote-btn">Vote</button>
         </div>
     )
