@@ -1,47 +1,40 @@
-.contentFirst{
+.content1{
     display: flex;
     justify-content: center;
     flex-flow: wrap;
-    background-color: #222;
-    height: 100vh;
+    height: 50%;
 }
 
 .textPay{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
     margin: 0;
-    text-align: left;
-    background-color: rgb(110, 110, 110);
-    border: white 2px solid;
-    height: 10%;
+    text-align: center;
+    background-color: rgb(254, 255, 170);
+    border: rgb(184, 184, 184) 4px inset;
+    height: 50px;
     width: 80%;
-    padding-left: 5%;
-    padding-right: 3%;
-    font-size: 15px;
-    margin-bottom: -7%;
-    color: white;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    padding: 15px;
 }
 
 .textPay2{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    position: relative;
     margin: 0;
-    text-align: left;
-    background-color: rgb(110, 110, 110);
-    border: white 2px solid;
-    height: 25%;
+    text-align: center;
+    background-color: rgb(254, 255, 170);
+    border: rgb(184, 184, 184) 4px inset;
+    height: 50px;
     width: 80%;
-    padding-left: 5%;
-    padding-right: 3%;
-    font-size: 15px;
-    margin-bottom: -10%;
-    color: white;
-    margin-top: 5%;
-    margin-bottom: 2%;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.trait{
+    background-color: rgb(190, 190, 190);
+    margin-top : 10%;
+    width: 450px;
+    height: 2px;
 }
 
 .cardNumber{
@@ -116,29 +109,25 @@
 .reserveButton{
     background-color: transparent;
     border-radius: 15px;
-    height: 35%;
-    width: 40%;
     border: solid 3px rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 25%;
     margin-top:10%;
     margin-left: 30%;
     text-align: center;
+    padding: 50px;
 }
 
 .reserveButton2{
     background-color: transparent;
     border-radius: 15px;
-    height: 15%;
-    width: 40%;
-    border: solid 3px rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 200px;
+    border: solid 3px rgb(0, 0, 0);
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 25%;
-    margin-top:10%;
+    margin-top: 30%;
     text-align: center;
 }
 
@@ -147,7 +136,7 @@
     border-radius: 15px;
     height: 10%;
     width: 17%;
-    border: solid 3px rgb(255, 255, 255);
+    border: solid 2px rgb(73, 73, 73);
     background-color: rgb(255, 255, 255);
     font-size: 15px;
     font-weight: bold;

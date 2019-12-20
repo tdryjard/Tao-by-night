@@ -5,14 +5,17 @@ import "./SignInPage.css";
 
 const SignInPage = () => {
     return(
+        <div>
+        <h1 className="title">Inscrivez vous</h1>
         <div className="generale">
-            <h1 className="inscri">Inscrivez vous</h1>
+            
             <div className="contnersInput">
-                <input type="text" name="pseudo" placeholder="Pseudo" id="name"/>
-                <input type="email" name="email" placeholder="email" id="mail"/>
-                <input type="password" name="password" placeholder="password" id="mpd"/>
+                <input type="text" name="pseudo" placeholder="Pseudo" className="inputSign"/>
+                <input type="email" name="email" placeholder="email" className="inputSign"/>
+                <input type="password" name="password" placeholder="password" className="inputSign"/>
             </div>
             <Link to="date"><button className="vava">Valider</button></Link>
+        </div>
         </div>
     )
 };

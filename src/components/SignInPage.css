@@ -13,22 +13,20 @@
     margin-top: 150px;
 }
 .inscri{
-    text-align: center;
-    margin-top: 0;
-    padding-top: 50px;
+        background: #222;
+        margin: 0 auto;
+        padding: 25px 0;
+        height: 50px;
+        width: 100%;;
+        color: rgb(216, 177, 70);
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
-#name{
+.inputSign{
     border: none;
     border-bottom: solid black 1px;
-    width: 180px;
-}#mail{
-    border: none;
-    border-bottom: solid black 1px;
-    width: 180px;
-}#mpd{
-    border: none;
-    border-bottom: solid black 1px;
-    width: 180px;
+    width: 80%;
 }
 .vava{
     margin-top: 50px;

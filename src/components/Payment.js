@@ -22,17 +22,16 @@ const Payment = () => {
 
     return (
         <div className="contentFirst">
-            <div className="titleJour">
-                <h4 className="textJour">Réservation</h4>
-            </div>
+                <h1 className="title">Réservation</h1>
             
+            <div className="content1">
             <h4 className="textPay">Si la demande pour la ligne n'atteint pas le minimum requis vous ne serez pas débité</h4>
-            <section>
             <input className="cardNumber" placeholder="numéro de carte" required="required"/>
             <input className="cardNumber1" placeholder="expiration" required="required"/>
             <input className="cardNumber2"placeholder="CVV" required="required"/>
-            </section>
+            </div>
             
+            <div className="trait"></div>
 
             <form className="contactForm" onSubmit={sendEmail}>
                 <h4 className="textPay2">Restez au courant de l'avancé de votre réservation et recevez votre Qr Code par mail</h4>
@@ -43,7 +42,6 @@ const Payment = () => {
                 :
                 <input className="reserveButton2" value="Valider mail" required="required"/>
                 }
-                
             </form>
 
             

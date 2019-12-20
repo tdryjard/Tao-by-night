@@ -4,8 +4,9 @@ import "./SelectionDeLigne.css"
 
 const SelectionDeLigne = () => {
     return(
-        <div className="busbus">
-            <h1 className="selection">Sélection de la ligne</h1>
+        <div>
+        <h1 className="title">Sélection de la ligne</h1>
+            
             <div className="ligneDeBus">
                 <div className="box1">
                     <Link to="/vote"><button className="ligne1">1</button></Link>
@@ -18,6 +19,7 @@ const SelectionDeLigne = () => {
                 <Link to="/vote"><button className="ligne18">18</button></Link>
                </div>
             </div>
+            <div className="backLine"></div>
         </div>
     )
 };

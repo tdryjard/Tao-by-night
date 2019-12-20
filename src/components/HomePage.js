@@ -8,20 +8,28 @@ const HomePage = () => {
     const [isNew, setIsNew] = useState(false);
 
     return(
+        <div>
+        <h1 className="title">5 étapes</h1>
         <div className="mainHomePage">
-            <h1 className="titleHome">3 étapes</h1>
-            <div className="circleContainer">
                 <div className="circleAndText">
-                    <p className="circle nb1">1</p>
-                    <p>Je me connecte ou m'inscris</p>
+                    <p className="circle"></p>
+                    <p>Se connecter</p>
                 </div>
-                <div className="circleAndText">
-                    <p className="circle nb1">2</p>
-                    <p>Je choisis ma ligne de bus</p>
+                <div className="circleAndText2">
+                    <p classname="textHome">Quand je sors ?</p>
+                    <p className="circle2"></p>
                 </div>
-                <div className="circleAndText">
-                    <p className="circle nb1">3</p>
-                    <p>Je valide et procède au paiement</p>
+                <div className="circleAndText3">
+                    <p className="circle3"></p>
+                    <p classname="textHome">Quelle ligne je prend ?</p>
+                </div>
+                <div className="circleAndText4">
+                    <p classname="textHome">Je demande une réservation à l'heure choisie</p>
+                    <p className="circle4"></p>
+                </div>
+                <div className="circleAndText5">
+                    <p className="circle5"></p>
+                    <p classname="textHome">Assez de demande pour emplir le bus ? go sortir ce week end !</p>
                 </div>
             </div>
             <div className="theTwoButtons">

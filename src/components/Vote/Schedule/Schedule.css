@@ -5,26 +5,21 @@
     align-items: flex-start;
     width: 80%;
     padding: 20px;
-    border-radius: 10px;
     cursor: pointer;
-    overflow: hidden;
     z-index: 1;
-}
-
-.schedule-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    border-bottom: solid 5px transparent;
     transition: background .1s;
+    user-select: none;
 }
 
-.schedule.choosen .schedule-background {
-    background: rgba(255, 255, 255, 0.15);
+.schedule.choosen {
+    background: rgba(216, 177, 70, 0.3);
+    border-color: rgba(216, 177, 70, 0.5);
+    border-radius: 10px;
 }
 
 .bar-container {
+    position: relative;
     background: rgba(0, 0, 0, 0.4);
     height: 25px;
     width: 100%;
@@ -37,7 +32,15 @@
     height: 100%;
     background: rgb(118, 216, 61);
     overflow: hidden;
+}
+
+.bar-preview {
+    position: absolute;
+    background: rgb(103, 196, 49);
+    height: 100%;
     transition: width .1s;
+    transition-delay: .1s;
+    overflow: hidden;
 }
 
 .bar-lightning {
@@ -47,13 +50,18 @@
     right: 100%;
     top: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.25);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35));
+    z-index: 5;
 }
 
 @keyframes choosen {
+    25% {
+        opacity: 1;
+    }
     50%, 100% {
         right: -10%;
-        left: 100%;
+        left: 80%;
+        opacity: 0;
     }
 }
 
@@ -63,9 +71,13 @@
     align-items: flex-end;
     justify-content: space-between;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .schedule-time {
     font-size: 1.25em;
+}
+
+.percentage {
+    color: rgb(216, 177, 70);
 }
