@@ -18,9 +18,8 @@ const Pierre = ({ choix }) => {
                 <div className="jaugesContainer1">
                     <p className="choiceText">1er choix</p>
                     <div className="fakeBar">
-                        <div className="bar" style={{ width: `${choix[0].percentage}%`}}>
-                        {choix[0] ? <p>choix[0].percentage</p> : null}
-                        </div>
+                        <div className="bar" style={{ width: `${choix[0].percentage}%`}}></div>
+                        {choix[0] ? <p>{choix[0].percentage}%</p> : null}
                     </div>
                     {choix[0] ? <p>0{choix[0].hour}:00</p> : null}
                 </div>
@@ -28,9 +27,8 @@ const Pierre = ({ choix }) => {
                 {choix[1] ? <div className="jaugesContainer2">
                     <p className="choiceText">2e choix</p>
                     <div className="fakeBar">
-                        <div className="bar" style={{ width: `${choix[1].percentage}%`}}>
-                            {choix[1] != null ? <p>{choix[1].percentage}%</p> : null}
-                        </div>
+                        <div className="bar" style={{ width: `${choix[1].percentage}%`}}></div>
+                        {choix[1] != null ? <p>{choix[1].percentage}%</p> : null}
                     </div>
                         {choix[1] ? <p>0{choix[1].hour}:00</p> : null}
                 </div> : null}
