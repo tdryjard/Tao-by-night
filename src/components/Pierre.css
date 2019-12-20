@@ -1,5 +1,5 @@
 .mainPierreContainer {
-    background-color: #f1f1f1;
+    background-color: #222;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -8,30 +8,26 @@
 }
 
 .titlePierre {
-    background-color: #222;
-    color: rgb(216, 177, 70);
+    background-color: white;
     padding: 30px;
     border-radius: 10px;
 }
 
 .msgAvertissement {
-    background-color: #222;
-    color: rgb(216, 177, 70);
-    width: 70%;
-    margin: 0 auto;
-    border-radius: 5px;
+    background-color: white;
     padding: 40px;
     text-align: center;
+    margin-top: 0;
 }
 
 .reserverButton {
-    background-color: #222;
-    color: rgb(216, 177, 70);
+    background-color: white;
     border-radius: 10px;
     padding: 15px;
     font-size: 24px;
     margin-bottom: 25px;
     border:none;
+    color: black;
 }
 
 .reserverButton:active {
@@ -48,27 +44,24 @@
 
 .choiceText {
     font-size: 24px;
-    background-color: #222;
-    color: rgb(216, 177, 70);
+    background-color: white;
     padding: 5px;
 }
 
 .jaugesContainer1 {
-    background-color: #222;
+    background-color: white;
     margin: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-    color: rgb(216, 177, 70);
     border-radius: 10px;
 }
 
 .jaugesContainer2 {
-    background-color: #222;
+    background-color: white;
     margin: 15px;
-    color: rgb(216, 177, 70);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,11 +73,6 @@
 .fakeBar {
     background-color: grey;
     width: 100px;
-    height: 25px;
-    color: #222;
-}
-
-.bar {
     height: 25px;
 }
 

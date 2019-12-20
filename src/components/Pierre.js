@@ -1,10 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import './Recap.css';
+import './Pierre.css';
 
-const Pierre = ({ choix }) => {
-    console.log(choix);
-
+const Pierre = () => {
     return (
         <div className="mainPierreContainer">
             <div>
@@ -18,24 +15,23 @@ const Pierre = ({ choix }) => {
                 <div className="jaugesContainer1">
                     <p className="choiceText">1er choix</p>
                     <div className="fakeBar">
-                        <div className="bar" style={{ width: `${choix[0].percentage}%`}}>
-                        {choix[0] ? <p>choix[0].percentage</p> : null}
+                        <div className="fakeContent1">
+                            35%
                         </div>
                     </div>
-                    {choix[0] ? <p>0{choix[0].hour}:00</p> : null}
+                    <p>Le 28/12/2019, à 02:00</p>
                 </div>
-                
-                {choix[1] ? <div className="jaugesContainer2">
+                <div className="jaugesContainer2">
                     <p className="choiceText">2e choix</p>
                     <div className="fakeBar">
-                        <div className="bar" style={{ width: `${choix[1].percentage}%`}}>
-                            {choix[1] != null ? <p>{choix[1].percentage}%</p> : null}
+                        <div className="fakeContent2">
+                            60%
                         </div>
                     </div>
-                        {choix[1] ? <p>0{choix[1].hour}:00</p> : null}
-                </div> : null}
+                    <p>Le 28/12/2019, à 03:00</p>
+                </div>   
             </div>
-            <Link to="payment"><button className="reserverButton">Valider mes choix</button></Link>
+            <button className="reserverButton">Valider mes choix</button>
         </div>
     )
 };
