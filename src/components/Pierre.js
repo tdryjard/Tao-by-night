@@ -29,7 +29,7 @@ const Pierre = () => {
                         </div>
                     </div>
                     <p>Le 28/12/2019, à 03:00</p>
-                </div>
+                </div>   
             </div>
             <button className="reserverButton">Valider mes choix</button>
         </div>

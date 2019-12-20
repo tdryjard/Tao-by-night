@@ -84,6 +84,10 @@
     color: #222;
 }
 
+.bar {
+    height: 25px;
+}
+
 .fakeContent1 {
     background-color: rgb(118, 216, 61);
     width: 35px;
