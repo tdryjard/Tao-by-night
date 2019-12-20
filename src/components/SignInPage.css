@@ -1,0 +1,41 @@
+.generale{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contnersInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    margin-top: 150px;
+}
+.inscri{
+        background: #222;
+        margin: 0 auto;
+        padding: 25px 0;
+        height: 50px;
+        width: 100%;;
+        color: rgb(216, 177, 70);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.inputSign{
+    border: none;
+    border-bottom: solid black 1px;
+    width: 80%;
+}
+.vava{
+    margin-top: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+
+}
+.vava:active{
+    transform: scale(.95);
+
+}

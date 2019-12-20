@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import "./Schedule.css";
 
-function Schedule({ schedule, votes }) {
+function Schedule({ schedule, votes, voteNumero, changeVote }) {
 
     const [choosen, setChoosen] = useState(false);
     const [percentage, setPercentage] = useState(0);
 
-    const limit = 15;
+    const limit = 25;
     
     useEffect(() => {
         setPercentage(percentageConversion(votes, limit));
@@ -22,6 +22,7 @@ function Schedule({ schedule, votes }) {
 
     useEffect(() => {
         setPercentage(percentageConversion(votes + choosen, limit));
+        changeVote(voteNumero, +choosen);
     }, [choosen]);
 
     return (
@@ -32,9 +33,10 @@ function Schedule({ schedule, votes }) {
                 <div className="percentage">{percentage}%</div>
             </div>
             <div className="bar-container">
-                <div className="bar" style={{ width: `${percentage}%` }}>
-                    <div className="bar-lightning" style={{animation: choosen && `choosen infinite ${1 / (percentage / 100)}s ease-in`}}></div>
+                <div className="bar-preview" style={{ width: `${percentage}%` }}>
+                    <div className="bar-lightning" style={{animation: choosen && `choosen infinite 1.5s ease-in-out`}}></div>
                 </div>
+                <div className="bar" style={{ width: `${percentageConversion(votes, limit)}%` }}></div>
             </div>
         </div>
     )
