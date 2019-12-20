@@ -9,7 +9,7 @@
 .textPay{
     display: flex;
     align-items: center;
-    justify-content:left;
+    justify-content: center;
     position: relative;
     margin: 0;
     text-align: left;
@@ -27,13 +27,13 @@
 .textPay2{
     display: flex;
     align-items: center;
-    justify-content:left;
+    justify-content:center;
     position: relative;
     margin: 0;
     text-align: left;
     background-color: rgb(110, 110, 110);
     border: white 2px solid;
-    height: 10%;
+    height: 25%;
     width: 80%;
     padding-left: 5%;
     padding-right: 3%;
@@ -46,17 +46,17 @@
 
 .cardNumber{
     outline: none;
-    -webkit-appearance: none;
     border: 3px solid #e6e6e6;
     border-radius: 5px;
     background-color: #fff;
     line-height: 60px;
-    vertical-align: middle;
     height: 66px;
     font-size: 15px;
-    width: 83%;
+    width: 80%;
     padding: 0 15px;
     font-size: 25px;
+    margin-left:5%;
+    margin-top: 5%;
 }
 
 .cardNumber1{
@@ -68,10 +68,11 @@
     line-height: 60px;
     vertical-align: middle;
     height: 20%;
-    width: 30%;
+    width: 25%;
     padding: 0 15px;
     font-size: 20px;
     margin-top: 2%;
+    margin-left:5%;
 }
 
 .cardNumber2{
@@ -84,7 +85,7 @@
     vertical-align: middle;
     height: 20%;
     font-size: 15px;
-    width: 40%;
+    width: 33%;
     padding: 0 15px;
     font-size: 20px;
     margin-top: 2%;
@@ -98,31 +99,58 @@
     background-color: #fff;
     line-height: 60px;
     vertical-align: middle;
-    height: 5%;
+    height: 10%;
     font-size: 15px;
-    width: 70%;
+    width: 60%;
     padding: 0 15px;
     font-size: 20px;
-    margin-top: -10%;
-    margin-bottom: 6%;
+    margin-left: 2%;
 }
 
-.placeButton{
-    width: 100%;
+.contactForm{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: -10%;
+    flex-flow: wrap;
 }
 
 .reserveButton{
     background-color: transparent;
     border-radius: 15px;
-    height: 60px;
-    width: 150px;
+    height: 35%;
+    width: 40%;
     border: solid 3px rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 25%;
+    margin-top:10%;
+    margin-left: 30%;
+    text-align: center;
+}
+
+.reserveButton2{
+    background-color: transparent;
+    border-radius: 15px;
+    height: 15%;
+    width: 40%;
+    border: solid 3px rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25%;
+    margin-top:10%;
+    text-align: center;
+}
+
+.addMail{
+    background-color: transparent;
+    border-radius: 15px;
+    height: 10%;
+    width: 17%;
+    border: solid 3px rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-left: 2%;
 }
