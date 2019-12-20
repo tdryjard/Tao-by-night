@@ -5,6 +5,7 @@ import Schedule from "./Schedule/Schedule";
 
 function Vote() {
 
+    const [displayedVotes, setDisplayedVotes] = useState([]);
     const [votes, setVotes] = useState([]);
     const [userVotes, setUserVotes] = useState([0, 0, 0, 0]);
     const [userConnected, setUserConnected] = useState({});
@@ -13,7 +14,7 @@ function Vote() {
         const header = new Headers({'Authorization' : 'AAAA', 'Password': '1234', 'Email': 'thomas@gmail.com', 'DateTime': '21-12-2019' });
 		const response = await fetch('/vote', { method: 'POST', headers: header });
 		const jsonResponse = await response.json();
-        setVotes(jsonResponse.votes);
+        setDisplayedVotes(jsonResponse.votes);
         console.log(jsonResponse);
     }
     
@@ -43,11 +44,12 @@ function Vote() {
         console.log(userConnected)
     }, [userConnected]);
 
-    const changeVote = (index, value) => {
+    const changeVote = (index, value, vote) => {
         console.log(index)
         const pipoVotes = [...userVotes];
         pipoVotes[index] = value;
         setUserVotes(pipoVotes);
+        setVotes(vote);
     }
 
     const addVote = () => {
@@ -63,7 +65,7 @@ function Vote() {
                 <small className="tip">* plusieurs choix sont possibles</small>
             </div>
             {
-                votes.length && votes.map((vote, index) => <Schedule votes={vote.number} schedule={vote.hour} key={index} voteNumero={index} changeVote={changeVote} />)
+                displayedVotes.length && displayedVotes.map((vote, index) => <Schedule votes={vote.number} schedule={vote.hour} key={index} voteNumero={index} changeVote={changeVote} />)
             }
             <Link to="/recap"><button className="vote-btn">Vote</button></Link>
         </div>

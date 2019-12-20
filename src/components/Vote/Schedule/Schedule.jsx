@@ -22,7 +22,8 @@ function Schedule({ schedule, votes, voteNumero, changeVote }) {
 
     useEffect(() => {
         setPercentage(percentageConversion(votes + choosen, limit));
-        changeVote(voteNumero, +choosen);
+        const vote = { percentage: percentage, hour: schedule };
+        changeVote(voteNumero, +choosen, vote);
     }, [choosen]);
 
     return (
