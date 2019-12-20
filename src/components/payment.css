@@ -8,10 +8,11 @@
 .textPay{
     margin: 0;
     text-align: center;
-    background-color: rgb(254, 255, 170);
-    border: rgb(184, 184, 184) 4px inset;
+    background-color: rgb(235, 235, 235);
+    border-top: rgb(0, 0, 0) 4px double;
+    border-bottom: rgb(0, 0, 0) 4px double;
     height: 50px;
-    width: 80%;
+    width: 100%;
     color: rgb(0, 0, 0);
     margin-top: 10px;
     padding: 15px;
@@ -20,22 +21,17 @@
 .textPay2{
     margin: 0;
     text-align: center;
-    background-color: rgb(254, 255, 170);
-    border: rgb(184, 184, 184) 4px inset;
+    background-color: rgb(235, 235, 235);
+    border-top: rgb(0, 0, 0) 4px double;
+    border-bottom: rgb(0, 0, 0) 4px double;
     height: 50px;
-    width: 80%;
+    width: 100%;
     color: rgb(0, 0, 0);
     margin-top: 50px;
     margin-bottom: 20px;
     padding: 15px;
 }
 
-.trait{
-    background-color: rgb(190, 190, 190);
-    margin-top : 10%;
-    width: 450px;
-    height: 2px;
-}
 
 .cardNumber{
     outline: none;

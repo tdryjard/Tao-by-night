@@ -31,8 +31,6 @@ const Payment = () => {
             <input className="cardNumber1" placeholder="expiration" required="required"/>
             <input className="cardNumber2"placeholder="CVV" required="required"/>
             </div>
-            
-            <div className="trait"></div>
 
             <form className="contactForm" onSubmit={sendEmail}>
                 <h4 className="textPay2">Restez au courant de l'avancé de votre réservation et recevez votre Qr Code par mail</h4>
