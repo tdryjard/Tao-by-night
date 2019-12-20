@@ -3,50 +3,60 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #555;
+    background: #f1f1f1;
     height: 100vh;
 }
 .titleCo{
-    border-radius: 3px;
-    margin: 0;
-    padding-top: 45px;
-    height: 90px;
-    color: white;
+    background: #222;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 25px 0;
+    height: 50px;
+    width: 300px;
+    color: rgb(216, 177, 70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .inputTotal{
-    margin-top: 120px;
+    margin-top: 130px;
 }
 #email{
-    height: 20px;
-    width: 200px;
+    height: 50px;
+    width: 260px;
     border: none;
-    border-bottom: solid 1px #ffffff;
+    border-bottom: solid 1px #222;
     background: transparent;
     color: white;
 }
 #email::placeholder{
-    color: white;
+    color: rgb(216, 177, 70);
+    font-size: 1.2em;
+
 }
 #password{
-    height: 20px;
-    width: 200px;
+    height: 50px;
+    width: 260px;
     border: none;
-    border-bottom: solid 1px #ffffff;
+    border-bottom: solid 1px #222;
     background: transparent;
 }
 #password::placeholder{
-    color: white;
+    color: rgb(216, 177, 70);
+    font-size: 1.2em;
 }
 .input2{
     margin-top: 80px;
 }
 .connexion{
-    background: #ffffff;
+    background: #222;
     margin-top: 100px;
     border-radius: 5px;
     border: none;
-    height: 40px;
-    width: 130px;
+    height: 60px;
+    width: 180px;
+    color: rgb(216, 177, 70);
+    font-size: 1.2em;
 }
 .connexion:active{
     transform: scale(.95);
