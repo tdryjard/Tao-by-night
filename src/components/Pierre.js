@@ -1,11 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import './Recap.css';
+import './Pierre.css';
 
-const Pierre = ({ choix }) => {
-
-    console.log(choix)
-
+const Pierre = () => {
     return (
         <div className="mainPierreContainer">
             <div>
@@ -35,7 +31,7 @@ const Pierre = ({ choix }) => {
                     <p>Le 28/12/2019, à 03:00</p>
                 </div>
             </div>
-            <Link to="payment"><button className="reserverButton">Valider mes choix</button></Link>
+            <button className="reserverButton">Valider mes choix</button>
         </div>
     )
 };

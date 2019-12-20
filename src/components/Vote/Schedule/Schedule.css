@@ -13,8 +13,8 @@
 }
 
 .schedule.choosen {
-    background: rgba(216, 177, 70, 0.3);
-    border-color: rgba(216, 177, 70, 0.5);
+    background: rgba(145, 70, 216, 0.3);
+    border-color: rgba(145, 70, 216, 0.5);
     border-radius: 10px;
 }
 
@@ -79,5 +79,5 @@
 }
 
 .percentage {
-    color: rgb(216, 177, 70);
+    color: rgb(145, 70, 216);
 }

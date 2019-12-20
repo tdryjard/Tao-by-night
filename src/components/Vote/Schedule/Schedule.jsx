@@ -13,17 +13,17 @@ function Schedule({ schedule, votes, voteNumero, changeVote }) {
     }, [])
 
     const chooseSchedule = event => {
-        const schedule = event.currentTarget;
-        schedule.classList.toggle('choosen');
+        const scheduleDiv = event.currentTarget;
+        scheduleDiv.classList.toggle('choosen');
         setChoosen(!choosen);
+         const vote = { percentage: percentageConversion(votes + !choosen, limit), hour: schedule };
+        changeVote(voteNumero, +!choosen, vote);
     }
 
     const percentageConversion = (currentValue, maxValue) => Math.floor((currentValue / maxValue) * 100);
 
     useEffect(() => {
         setPercentage(percentageConversion(votes + choosen, limit));
-        const vote = { percentage: percentage, hour: schedule };
-        changeVote(voteNumero, +choosen, vote);
     }, [choosen]);
 
     return (

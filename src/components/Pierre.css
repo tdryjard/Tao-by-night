@@ -1,0 +1,89 @@
+.mainPierreContainer {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.titlePierre {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.msgAvertissement {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.reserverButton {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 25px;
+    border:none;
+    color: black;
+}
+
+.reserverButton:active {
+    transform: scale(.95);
+}
+
+.alexJauges {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px;
+    width: 100%;
+}
+
+.choiceText {
+    font-size: 24px;
+    background-color: white;
+    padding: 5px;
+}
+
+.jaugesContainer1 {
+    background-color: white;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.jaugesContainer2 {
+    background-color: white;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.fakeBar {
+    background-color: grey;
+    width: 100px;
+    height: 25px;
+}
+
+.fakeContent1 {
+    background-color: rgb(118, 216, 61);
+    width: 35px;
+    height: 25px;
+}
+
+.fakeContent2 {
+    background-color: rgb(118, 216, 61);
+    width: 60px;
+    height: 25px;
+}
