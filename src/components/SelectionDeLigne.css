@@ -2,34 +2,40 @@
 .box1{
     display: flex;
     justify-content: space-around;
-    margin-top: 150px;
+    margin-top: 25%
 }
 .box2{
     display: flex;
     justify-content: space-around;
-    margin-top: 150px;
     align-items: center;
-}
-.bus{
-    margin-top: 30px;
+    margin-top: 25%;
 }
 .busbus{
-    background: url("http://img.over-blog-kiwi.com/0/67/23/27/ob_8f0764_cathedrale-orleans.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: #f1f1f1;
     height: 100vh;
     width: 100%;
     position: absolute;
     top: 0;
 }
 .selection{
-    color: white;
+    border-radius: 5px;
+    color: rgb(216, 177, 70);
+    background: #222;
+    width: 90%;
+    margin: 0 auto;
     margin-top: 30px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-
+    margin-bottom: 130px;
+}
+.ligneDeBus{
+    margin: 0 auto;
+    background: #222;
+    border: solid 4px rgb(216, 177, 70);
+    border-radius: 10px;
+    width: 90%;
+    height: 400px;
 }
 .ligne1{
     height: 60px;

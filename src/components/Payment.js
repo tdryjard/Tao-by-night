@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
-import { Link, useParams } from 'react-router-dom'
+
+import React, {useState} from 'react';
+import { Link, useParams } from 'react-router-dom';
+import './payment.css';
 import emailjs from 'emailjs-com';
-import './payment.css'
 
 const Payment = () => {
 
